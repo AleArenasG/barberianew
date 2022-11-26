@@ -1,0 +1,252 @@
+
+
+    .portada
+    {
+        width: 500px;
+        height: 1500px;
+        background-image: url("../assets/img/productos_jabon.jpeg");
+    }
+
+
+.logo
+{
+    width: 100px;
+}
+
+
+header
+{
+    display: flex; /*Nos ayuda a poner los elementos como si fueran celdas de una tabla,es propiedad responsive, el flex es un valor flexible al espacio que ocupan los elementos*/
+    justify-content: center;
+        
+    margin: 0px 50px 50px 50px;
+    align-items: center;
+    width: 90%;
+    position: fixed;/*FIXED nos ayuda a que cuando queramos que un menu siga con nosotros al bajar la pagina o la hoja ponemos --------------POSITION : FIXED;---------------------- */
+    background-color: rgb(136, 97, 39);
+    position:absolute;
+}
+
+
+
+
+.menu ul
+{   
+        
+    display: flex;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.menu ul li a
+{
+
+    text-decoration: none;
+    color: rgb(41, 158, 194);
+    font-size: 22px;
+    font-family:'Times New Roman', Times, serif
+}
+.menu ul li a:hover
+{
+  color: rgba(107, 184, 48, 0.911);
+  border-bottom: 1px rgb(236, 32, 9) ;
+}
+
+.menu ul li
+{
+    margin-left: 24px;
+}
+
+.iconos ul
+{
+    list-style: none;
+    display: flex;
+    margin-bottom: 10px;
+    padding-bottom: -10px;
+}
+.iconos ul li
+{
+    text-decoration: none;
+    margin-left: 20px;
+    /*filter: invert();*/                                                                        /*NOS AYUDA A INVERTIR EL COLOR DE LAS IMAGENES , CAMBIA PUES LOS COLORES A NEGATIVO POT ASI DECIRLO*/
+}
+
+main
+{
+
+max-width: 95%;
+
+}
+
+.portada
+{
+    display: flex;
+    width: 95%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+}
+.texto-portada
+{
+    position:absolute;
+    width: 400px;
+    height: 300px;
+    top: 40%;
+    left: 10%;
+    margin: -10rem auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.texto-portada h1
+{
+    color: rgba(2, 2, 2, 0.856);
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    filter: invert();
+    padding-top: 10px ;
+    margin: 2rem auto;
+}
+.texto-portada a
+{
+    background-color: rgb(255, 0, 0);
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+
+.abajorealizar p
+{
+    position: absolute;
+    font-size: 30px;
+    padding-bottom: 200px;
+    margin: -45rem auto;
+    margin-left: 250px;
+    color: rgb(48, 184, 177);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+
+.abajorealizar p 
+{
+background-color: rgba(168, 86, 18, 0.74);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center; 
+text-decoration: solid ; width: 900px; height: 100px;
+}
+
+.tituloservicios
+{
+    position:absolute;
+    font-size: 30px;
+    margin: -55rem auto;
+    text-align: center;
+    padding-left: 450px;
+    color: honeydew;
+    
+}
+
+
+h2{
+    margin: 0;
+    padding: 2em;
+}
+
+.container  {
+    display: inline;
+    position:absolute;
+    background-color: rgba(37, 158, 98, 0.445);
+    padding: left 110px;
+    overflow: hidden;
+    margin: -32rem;
+    left: 100px;
+    
+
+    
+}
+
+.item{
+    margin: 1em;
+    padding: 1em;
+    color: burlywood;
+    float: right;
+    position: relative;
+    right: 90px;
+
+}
+
+
+
+
+
+
+
+.contenido
+{
+    width: 100%;
+    max-width: 1300px;
+    height: 500px;
+    display:  flex;
+    justify-content: center;
+    flex-wrap: wrap;/*esta propiedad obliga a las div que estan dentro de esta a permanecer en una misma linea, asi mismo permite controlar la dirrecion es la cual se tendran todos los elemento , O SEA QUE TIRA LAS <DIV> PARA ABAJO*/
+}
+.contenido .card
+{
+    width: 330px;
+    height: 500px;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+    box-shadow:  0 2px 2px rgb(235, 98, 7); /*Nos sirve para poner sombra a la letra*/
+    transition: all 0,25s;
+    background-color: rgba(168, 86, 18, 0.952);
+    
+}
+
+.contenido .card:hover
+{
+    transform: translateY(-15px);
+    box-shadow:  rgb(240, 240, 6);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card a{  /*LO QUE SE HIZO AQUI FUE DARLE COLOR  A LOS CAJONSITOS DE COMPRAR QUE TIENE CADA PRODUCTOS*/
+
+    text-decoration: none;
+    background-color: rgb(90, 90, 90);
+    color: rgb(146, 189, 60);
+    padding: 10px;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+}
+
+.contenido .card img{
+
+    padding-top: 20px;
+    justify-items: center;
+    margin-left: 80px;
+}
+
+
+.Contactanosen{
+    color: aquamarine;
+}
+
+.pie
+        {
+            position: absolute;
+            
+            clear: both; /*SE USA CLEAR BOTH PARA PONER EL PIE DE PAGINA Y LIMPIA Y TIRAR TODO HACIA ABAJO*/
+            padding-top: 800px;
+            float: right;
+            padding-left: 250px;
+        }
+        
+        span
+        {
+            padding-right: 122px;
+        }
