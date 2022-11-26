@@ -12,17 +12,60 @@
     
 </head>
 <body>
+    
    
 <h1>//// BIENVENIDOs \\\\</h1>
+
+<div class="icono-menu">
+    <img src="img/open-menu.png" id="icono-menu">
+</div>
+
+<div class="cont-menu active" id="menu">
+    <ul>
+        <a href="CATbarRESPONSI.html"><li> Catalogo</li></a>
+        
+      
+        <a href="imgbarber2.html"><li> Galeria</li></a>
+        <a href="THE_BARBER_PRODUCTOS.html"><li> Productos</li></a>
+        <a href="index.html"><li> Sedes</li></a>
+        <a href="index.html"><li> Cerrar Sesión</li></a>
+       
+        
+    </ul>
+</div>
+
+<script>
+
+const iconoMenu = document.querySelector('#icono-menu'),
+      menu = document.querySelector('#menu');
+
+iconoMenu.addEventListener('click', (e) => {
+
+   
+    menu.classList.toggle('active');
+    document.body.classList.toggle('opacity');
+
+   
+    const rutaActual = e.target.getAttribute('src');
+
+    if(rutaActual == 'img/open-menu.png'){
+              e.target.setAttribute('src','../assets/img/open-menu2.png');
+          }else{
+              e.target.setAttribute('src','../assets/img/open-menu.png');
+          }
+});
+
+</script>
+
+
 <P>¿QUE DESEAS VER?</P>
 
-<a class="opciones" href="CatlogBarber.html"> CATALOGO</a>
-<a class="opciones" href="https://24timezones.com/reloj_hora_exacta.php#/map"> HORARIOS</a>
+<a class="opciones" href="CATbarRESPONSI.html"> CATALOGO</a>
 <a class="opciones" href="THE_BARBER_PRODUCTOS.html"> SERVICIOS</a>
 <a class="opciones" href="Agregar producto.html"> AGREGAR PRODUCTO</a>
 <a class="opciones" href="Aagregar Servicios.html"> AGREGAR SERVICIO</a>
 <a class="opciones" href="Agregar Personal.html"> AGREGAR PERSONAL</a>
-<a class="cerrar" href="index.html"> CERRAR SESION</a>
+
 
 
 

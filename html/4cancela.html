@@ -13,34 +13,70 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
    
+
+<link rel="stylesheet" href="../css/1barberia.css" type="text/css"/>
 <link rel="stylesheet" href="../css/4cancela.css" type="text/css"/>
 <title>cancela</title>
+<link rel="stylesheet" href="../css/nav_bar.css" type="text/css"/>
 </head>
 <body>
+<div class="icono-menu">
+    <img src="../assets/img/open-menu.png" id="icono-menu">
+</div>
+<div class="cont-menu active" id="menu">
+    <ul>
+        <a href="./1barberia.html"><li> Gestion</li></a>
+        <a href="./CATbarRESPONSI.htmL"><li> Catalogo</li></a>
+        <a href="./THE_BARBER_PRODUCTOS.html"><li> Productos</li></a>
+    </ul>
+</div>
 <div class="encabezado">
     <img src="../assets/img/img11.PNG" alt="">
 </div>
-<div class="formulario">
+<div class="area-citas">
 <label for="">INDICANOS TU NOMBRE</label> 
-<br><br>   
 <input type="text">
-<br><br>
 <label for="">CITAS ACTIVAS</label> 
-<br><br>
+<div class="formulario">
+<div class="cancelar-cita">
 <input type="datetime-local">
-<br><br>
-<input type="datetime-local">
-<br><br>
-<input type="datetime-local">
-<br><br>
-<input type="datetime-local">
-</div>
-
-<a href="1barberia.html"target="1barberia.html"><div class="atras">ATRAS</div></a>
-<div class="inicio">INICIO</div>
 <a href="final.html"><div class="cancelar1">CANCELAR</div></a>
-<a href="final.html"><div class="cancelar2">CANCELAR</div></a>
-<a href="final.html"><div class="cancelar3">CANCELAR</div></a>
-<a href="final.html"><div class="cancelar4">CANCELAR</div></a>
+</div>
+<div class="cancelar-cita">
+<input type="datetime-local">
+<a href="final.html"><div class="cancelar1">CANCELAR</div></a>
+</div>
+<div class="cancelar-cita">
+<input type="datetime-local">
+<a href="final.html"><div class="cancelar1">CANCELAR</div></a>
+</div>
+<div class="cancelar-cita">
+<input type="datetime-local">
+<a href="final.html"><div class="cancelar1">CANCELAR</div></a>
+    </div>
+
+</div>
 </body>
+<script>
+
+   const iconoMenu = document.querySelector('#icono-menu'),
+         menu = document.querySelector('#menu');
+   
+   iconoMenu.addEventListener('click', (e) => {
+   
+      
+       menu.classList.toggle('active');
+       document.body.classList.toggle('opacity');
+   
+      
+       const rutaActual = e.target.getAttribute('src');
+   
+       if(rutaActual == '../assets/img/open-menu.png'){
+           e.target.setAttribute('src','../assets/img/open-menu2.png');
+       }else{
+           e.target.setAttribute('src','../assets/img/open-menu.png');
+       }
+   });
+   
+   </script>
 </html>

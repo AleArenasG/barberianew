@@ -12,6 +12,9 @@ body
 }
 .titulo{
     color: #EB920C;
+    margin: 0% 3%;
+    z-index: 10;
+    position: relative;
     font-family: 'Fontdiner Swanky', cursive;
     font-size:230%;
     text-align:right;
@@ -26,7 +29,7 @@ div img
 }
 .pedir{
     width:25%;
-    height:25%;
+    height:30%;
     position:fixed;
     top:20%; left: 10%; 
     cursor:pointer;
@@ -35,7 +38,7 @@ div img
  
 .modificar{
     width:25%;
-    height:25%;
+    height:30%;
     position:fixed;
     top:50%; left: 42%; 
     cursor:pointer;
@@ -44,9 +47,10 @@ div img
 
 .cancelar{
     width:25%;
-    height:25%;
+    height:30%;
     position:fixed;
-    top:20%; left: 75%; 
+    top:20%; 
+    left: 70%; 
     cursor:pointer;
 }
 .cancelar:hover {filter: sepia(60%);}
@@ -188,7 +192,7 @@ a{
             font-family: 'Fontdiner Swanky', cursive;
             font-size:230%;
             text-align:right;
-            padding-top:7%;
+            padding-top:5%;
             padding-right:3%;
             max-width:inherit;  
         }

@@ -15,8 +15,22 @@
    
 <link rel="stylesheet" href="../css/2asigna.css" type="text/css"/>
 <title>asigna</title>
+<link rel="stylesheet" href="../css/nav_bar.css" type="text/css"/>
+<link rel="stylesheet" href="../css/1barberia.css" type="text/css"/>
+
 </head>
 <body>
+<div class="icono-menu">
+    <img src="../assets/img/open-menu.png" id="icono-menu">
+</div>
+<div class="cont-menu active" id="menu">
+    <ul>
+        <a href="./1barberia.html"><li> Gestion</li></a>
+        <a href="./CATbarRESPONSI.htmL"><li> Catalogo</li></a>
+        <a href="./THE_BARBER_PRODUCTOS.html"><li> Productos</li></a>
+        
+    </ul>
+</div>
 <div class="encabezado">
     <img src="../assets/img/img5.PNG" alt="">
 </div>
@@ -34,8 +48,28 @@
 
 </div>
 
-<a href="1barberia.html"><div class="atras">ATRAS</div></a>
-<div class="inicio"><a href="index.html">INICIO</div></a>
-<div class="barberos"><a href="CatlogBarber.html">VER BARBEROS</div></a>
+<div class="barberos"><a href="CATbarRESPONSI.html">VER BARBEROS</div></a>
 </body>
+<script>
+
+   const iconoMenu = document.querySelector('#icono-menu'),
+         menu = document.querySelector('#menu');
+   
+   iconoMenu.addEventListener('click', (e) => {
+   
+      
+       menu.classList.toggle('active');
+       document.body.classList.toggle('opacity');
+   
+      
+       const rutaActual = e.target.getAttribute('src');
+   
+       if(rutaActual == '../assets/img/open-menu.png'){
+           e.target.setAttribute('src','../assets/img/open-menu2.png');
+       }else{
+           e.target.setAttribute('src','../assets/img/open-menu.png');
+       }
+   });
+   
+   </script>
 </html>

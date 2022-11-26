@@ -11,14 +11,55 @@
 <link rel="stylesheet" href="../css/InicioUs.css">
   
 </head>
+
 <body>
-    <h1>//// BIENVENIDOS \\\\</h1>
+    <h1>// BIENVENIDOS \\</h1>
+
+    
+<div class="icono-menu">
+    <img src="img/open-menu.png" id="icono-menu">
+</div>
+
+<div class="cont-menu active" id="menu">
+    <ul>
+        <a href="CATbarRESPONSI.html"><li> Catalogo</li></a>
+        <a href="horario.htm"><li> Horarios</li></a>
+        <a href="index.html/#tercero"><li> Servicios</li></a>
+        <a href="CATbarRESPONSI.html"><li> Galeria</li></a>
+        <a href="THE_BARBER_PRODUCTOS.html"><li> Productos</li></a>
+        <a href="index.html/#cinco"><li> Sedes</li></a>
+        <a href="index.html"><li> Cerrar Sesión</li></a>
+    </ul>
+</div>
+
+<script>
+
+const iconoMenu = document.querySelector('#icono-menu'),
+      menu = document.querySelector('#menu');
+
+iconoMenu.addEventListener('click', (e) => {
+
+    // Alternamos estilos para el menu y body
+    menu.classList.toggle('active');
+    document.body.classList.toggle('opacity');
+
+    // Alternamos su atributo 'src' para el ícono del menú
+    const rutaActual = e.target.getAttribute('src');
+
+    if(rutaActual == 'img/open-menu.png'){
+              e.target.setAttribute('src','../assets/img/open-menu2.png');
+          }else{
+              e.target.setAttribute('src','../assets/img/open-menu.png');
+          }
+});
+
+</script>
 <P>¿QUE DESEAS VER?</P>
 
-<a class="opciones" href="THE_BARBER_PRODUCTOS.html"> CATALOGO</a>
-<a class="opciones" href="horario.htm"> HORARIOS</a>
-<a class="opciones" href="index.html#tercero"> SERVICIOS</a>
-<a class="cerrar" href="index.html"> CERRAR SESION</a>
+<a class="opciones" href="CATbarRESPONSI.html"> CATALOGO</a>
+<a class="opciones" href="index.html"> HORARIOS</a>
+<a class="opciones" href="THE_BARBER_PRODUCTOS.html"> SERVICIOS</a>
+
     
 </body>
 </html>

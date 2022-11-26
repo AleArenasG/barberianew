@@ -6,8 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
+  <!--popover-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Document</title>
     <style>
+         /*RESPONSIVE ENSAYO*/  
+      .header
+{
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+}
+.header h1
+{
+    font-size: 50px;
+}
+* 
+{
+    box-sizing: border-box;
+    /*box-sizing es el comportamiento por defecto para el tamaño de la caja, 
+    calcula las medidas de un elemento*/
+}
+@media screen and (max-width:400px){
+    .barra a{
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and(max-width:800px){
+    .columa-izquierda-columna-derecha{
+        width: 7%;
+        padding: 0;
+    }
+}
+      /*TERMINA ENSAYO RESPONSIVE*/  
+
         body, html{
             height: 100%;
         }
@@ -27,7 +63,7 @@
             width: 100%;
         }
         .barberos1>div {
-            width: 40%;
+            width: 21%;
             display: inline-block;
             text-align: center;
             margin: 80px 10px 30px 50px;
@@ -42,20 +78,7 @@
             font-family: 'Inconsolata';
             font-size: 18px;
             font-weight: 800;
-        }
-        .ancho{
-            width: 100%;
-            display: inline-block;
-        }
-        .barberos2{
-            width: 40%;
-            display: inline-block;
-            text-align: center; 
-        }
-        .botones{ 
-            position: fixed; 
-            bottom:5%;
-        }
+        }                 
         h2{
             color: orange;
         }
@@ -72,6 +95,50 @@
             text-align: left;
             display: inline-block; 
         }  
+        /*ESTRELLAS DINAMICAS el css*/
+        label {
+            color: grey;
+        }
+        input[type="radio"] {
+            display: none;
+        }
+        .clasificacion {
+            direction: rtl;
+            /*derecha a izquierda*/
+            unicode-bidi: bidi-override;          
+        }
+        label:hover{
+            color:orange;
+        }
+        label:hover ~ label{
+            color:orange;
+        }
+        input[type = "radio"]:checked ~ label{
+            color:orange;
+        }
+        .clasificacion>label{
+            font-size: 40px;
+        }
+        /*boton clasificar color*/
+        button{
+         font-size:18px;
+         padding:.5em 1em;
+         margin:.22em;
+         border-radius:.22em;
+         color:#fff;
+         border: .1em solid  rgb(146, 122, 44);
+         background: linear-gradient(rgb(82, 64, 40), rgb(125, 92, 57));
+         text-shadow:-.05em -.05em .05em hsl( 211, 40%,20%);
+         }
+         /*ensayo popover*/
+         #popover{
+     background: rgb(146, 105, 56);
+     font-family: Arial, Helvetica, sans-serif;
+     }
+     .right
+        {
+            text-align: right !important;
+        }
     </style>
 </head>
 
@@ -79,42 +146,71 @@
     <div class="portada background">
         <div class="texto-portada">
             <div class="barberos1">
-                <div>
-                    <a href=""><img src="../assets/img/barber5.png" alt=""></a>
+
+                <div class="container right">                      
+                    <a href="#" data-toggle="popover" title="Administrador" data-content="No permitido 
+                    para usuario"><button name="button">Editar</button></a>
+                    </div> 
+                    <script>
+                    $(document).ready(function(){
+                    $('[data-toggle="popover"]').popover();   
+                    });
+                    </script>
+
+                <div class="container">     
+                    <a href="#" data-toggle="popover" 
+                    title="Barbero"        
+                    data-content="DAVID FERNANDO ALVAREZ EXPERIENCIA:7 AÑOS, EDAD: 28  
+                    ENLACE A BLOG PERSONAL:@dav_alv_94">
+                    <img src="../assets/img/barber1.png" alt=""></a>
                 </div>
-                    <div>
-                      <ul>
-                      <li>NOMBRE: DAVID ALVAREZ</li>
-                      <br>
-                      <li>EXPERIENCIA: 7 AÑOS</li>
-                      <br>
-                      <li>EDAD: 28 AÑOS</li>
-                      <br>
-                      <li>ENLACE A BLOG PERSONAL:</li>
-                      <br>
-                      <li>@dav_alv_94</li>
-                      </ul>
-                    </div>
+                  
+                  <script>
+                  $(document).ready(function(){
+                      $('[data-toggle="popover"]').popover();   
+                  });
+                  </script>  
+
+
+
+
             </div>
                     <div class="califica">
                       <div class="derecha">
                       <h2>Calificacion del Servicio</h2>
                       </div>
                       <div class="izquierda">
-                      <img src="../assets/img/png-star2.png" alt="" width="150px" height="38px">
+                        <form>
+                            <p class="clasificacion">
+                                <input id="radio1" type="radio" name="estrellas" value="5">
+                                <label for="radio1">★</label>
+                               
+                                <input id="radio2" type="radio" name="estrellas" value="4">           
+                               <label for="radio2">★</label>
+                                
+                              <input id="radio3" type="radio" name="estrellas" value="3">            
+                              <label for="radio3">★</label>
+                                
+                              <input id="radio4" type="radio" name="estrellas" value="2">           
+                              <label for="radio4">★</label>
+                                
+                              <input id="radio5" type="radio" name="estrellas" value="1">           
+                              <label for="radio5">★</label>
+                            </p>
+                        </form>
+
+
+                        <button onclick="alert('Ha sido guardada su calificacion');">Calificar</button>   
+                        <script>
+                        function mensaje()
+                         {
+                          alert('');
+                         }
+                        </script>
+
                       </div>                  
-                    </div>
-
-                    <div class="ancho botones">
-                      <div class="barberos2">
-                      <a href="CatlogBarber.html"><input type="button" value="Atras"></a>
-                      </div>
-                      <div class="barberos2"></div>
-                      <a href="index.html"><input type="button" value="Inicio"></a>
-                      </div>
-                    </div>
+                    </div>                  
         </div>
-
     </div>
 </body>
 </html>

@@ -15,6 +15,48 @@
 <body>
         <h1>//// AGREGAR SERVICIO \\\\</h1>
 
+        <div class="icono-menu">
+          <img src="img/open-menu.png" id="icono-menu">
+      </div>
+      
+      <div class="cont-menu active" id="menu">
+          <ul>
+              <a href="CATbarRESPONSI.html"><li> Catalogo</li></a>
+              <a href="horario.htm"><li> Horarios</li></a>
+              <a href="index.html"><li> Servicios</li></a>
+              <a href="index.html"><li> Galeria</li></a>
+              <a href="THE_BARBER_PRODUCTOS.html"><li> Productos</li></a>
+          
+              <a href="Aagregar Servicios.html"><li> Agregar Servicios</li></a>
+              <a href="Agregar producto.html"><li> Agregar Productos</li></a>
+              <a href="Agregar Personal.html"><li> Agregar Personal</li></a>
+              
+          </ul>
+      </div>
+      
+      <script>
+      
+      const iconoMenu = document.querySelector('#icono-menu'),
+            menu = document.querySelector('#menu');
+      
+      iconoMenu.addEventListener('click', (e) => {
+      
+         
+          menu.classList.toggle('active');
+          document.body.classList.toggle('opacity');
+      
+         
+          const rutaActual = e.target.getAttribute('src');
+      
+          if(rutaActual == 'img/open-menu.png'){
+              e.target.setAttribute('src','../assets/img/open-menu2.png');
+          }else{
+              e.target.setAttribute('src','../assets/img/open-menu.png');
+          }
+      });
+      
+      </script>
+
         <form class="">
                   
            
@@ -34,7 +76,7 @@
             </div>
             
             <div class="agregar foto">
-              <label for="PRODUCTO" class="">AGREGAR FOTO
+              <label for="PRODUCTO" class="ag">AGREGAR FOTO
                 <br>
               </label>
               <input type="file" class="" id="AGREGAR"  aria-describedby="emailHelp">
@@ -42,7 +84,7 @@
          
             <button type="submit" class="agg">AGREGAR</button>
           </form>
-          <a class="cerrar" href="inicioAd.html"> ATRAS</a>
+          
 
 </body>
 </html>

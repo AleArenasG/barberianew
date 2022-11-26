@@ -27,20 +27,25 @@ body{
     opacity: 80%;
 }
 
+#imagen_logo img{
+    width: 550px;
+    height: 250px;
+}
+
 .contenedor_servicios{
     display:flex;
     margin-left: 6%;
     margin-right: 11% ;
     justify-content: space-around;
     position: relative;  
-    top: -10%;   
+    bottom: 17%;   
 }
 
 .contenedor_servicios img{
     position: relative;
     width: 100px;
     height: 75px;
-    top: -30px;
+    bottom: 28px;
 }
 
 .servicios{
@@ -63,6 +68,38 @@ body{
     color: black;
     opacity: 90%;
 }
+.desplegable img{
+    width: 50px;
+    height: 50px;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 13px;
+}
+.links{
+    background-color: #f9f9f9;
+    width: 120px;
+    display: none;
+}
+.links a:hover{
+    background-color: #f1f1f1;
+    display: block;
+}
+.desplegable:hover .links{
+    display: block;
+    position: absolute ;
+    opacity: 80%;
+}
+.desplegable{
+    position: relative;
+    bottom: 88%;
+    left: 73%;
+    width: 50px;
+      
+}
 
 .boton_inicio{
     width: 200px;
@@ -76,7 +113,7 @@ body{
     background-color: #c8bda9;
     position: absolute;
     bottom: 90%;
-    left: 75%;
+    left: 78%;
     text-decoration: none;
     color: black;
 }
@@ -106,7 +143,7 @@ body{
     height: 100%;
 }
 
-div #wpp{
+#wpp{
     width: 45px;
     height: 45px;
 }
@@ -240,7 +277,7 @@ div #wpp{
 .serv h2{
     position: relative;
     z-index: 50;
-    top: -100%;
+    bottom: 99%;
     right: 45%;
     transform: rotate(270deg);
     color:#c8bda9;
@@ -395,6 +432,612 @@ span{
     font-size: 15px;
     top: -15px;
 }
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 600px){
+    .boton_inicio a{
+        left: 65%;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .desplegable{
+        left: 5%;
+    }
+
+    #imagen_logo{
+        width: 50px !important;
+        height: 50px;
+        left: 15%;
+        bottom: 65%;
+    }
+   
+    #imagen_logo img{
+       width: 350px;
+       height: 200px;
+    }
+
+    .boton a{
+        left: 32%;
+        bottom: 35%;
+    }
+
+    .redes{
+        left: 87.7%;
+    }
+
+    #wpp a img{
+        left: 87.7%;
+    }
+
+    #wpp a img{
+        width: 35px;
+        height: 35px;
+        position: fixed;    
+        bottom: 14.8%; 
+    }
+
+    .red{
+        width: 35px;
+        height: 35px;
+        margin-bottom: 5px;
+    }
+
+    .servicios{
+        width: 115px;
+        height: 50px;
+        padding: 15px 15px 15px 15px;
+        background-color: #c8bda9 ;
+        display: flex;
+        margin-left: 5%;
+        position: relative;   
+        bottom: px;
+        top: 12px;
+        left: 2.5px;
+    }
+
+    .contenedor_servicios img{
+        position: relative;
+        width: 70px;
+        height: 60px;
+        top: 0px;
+    }
+
+    .servicios p{
+        display: none;
+    }
+
+
+/*----------------------------------------------------------------------------------*/
+    .contenedor_dos{
+        background-image: none !important ;
+        display: flex;
+    }
+
+    #imagen{
+        position: relative;
+        margin-top: 0%;
+        right: 1%;
+        width: 230px;
+        height: 225px;
+        margin-right: 9%
+    }
+
+    .texto{
+        position: relative;
+        right: 5%;
+        bottom: 40px;
+        width: 150px;
+        margin-left: 10%;
+        font-size: 15px;  
+    }
+
+    .udt{
+        display: none;
+        
+    }
+
+/*----------------------------------------------------------------------------*/
+
+
+    #tercertitu h1{
+        font-size: 300%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        opacity: 30%;
+    }
+
+    #tercero #tercertitu{
+        top: -110px;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+    }
+
+    .serv{
+        width: 100%;
+        height: 300px ;
+        margin-left: -15%;
+    }
+
+    .serv h2{
+        position: relative;
+        z-index: 50;
+        top: -55%;
+        right: 45%;
+        transform: rotate(270deg);
+        color:#c8bda9;
+    }
+
+    /*----------------------------------------------------------------------------*/
+
+    .productos{
+        width: 30%;
+        position: relative;
+        top: 30px;
+        left: 10px;
+    }
+
+    .productos hr{
+        width: 150.5%;
+        position: relative;
+        color: #c8bda9;
+        top: -74px;
+        right: -242px;
+    }
+
+     /*----------------------------------------------------------------------------*/
+
+     #sedes h2{
+        position: relative;
+        width: 25px;
+        left: 68%;
+        bottom: 50px;
+        font-size: 55px;
+    }
+
+    #sedes hr{
+        width: 65%;
+        position: relative;
+        color: #c8bda9;
+        top: 35px;
+        right: 78px;
+    }
+
+    #contenedor_cinco{
+        position: relative;
+        bottom: 140px;
+    }
+
+    #horario{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 0%;
+    }
+
+    #redes_dos .sedes_dos {
+        width: 35px;
+        height: 35px;
+    }
+
+
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+@media (min-width: 600px) and (max-width: 800px){
+    .boton_inicio a{
+        left: 75%;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .desplegable{
+        left: 5%;
+    }
+
+    #imagen_logo{
+        width: 50px !important;
+        height: 50px;
+        left: 15%;
+        bottom: 65%;
+    }
+   
+    #imagen_logo img{
+       width: 350px;
+       height: 200px;
+    }
+
+    .boton a{
+        left: 28%;
+        bottom: 35%;
+    }
+
+    .redes{
+        left: 91.7%;
+    }
+
+    #wpp a img{
+        left: 91.7%;
+    }
+
+    #wpp a img{
+        width: 40px;
+        height: 40px;
+        position: fixed;    
+        bottom: 14.8%; 
+    }
+
+    .red{
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+
+    .servicios{
+        width: 115px;
+        height: 50px;
+        padding: 15px 15px 15px 15px;
+        background-color: #c8bda9 ;
+        display: flex;
+        margin-left: 5%;
+        position: relative;   
+        bottom: px;
+        top: 12px;
+        left: 2.5px;
+    }
+
+    .contenedor_servicios img{
+        position: relative;
+        width: 70px;
+        height: 60px;
+        top: 0px;
+    }
+
+    .servicios p{
+        display: none;
+    }
+
+
+/*----------------------------------------------------------------------------------*/
+    .contenedor_dos{
+
+        display: flex;
+        margin-bottom: 0% !important ;
+    }
+
+    #imagen{
+        position: relative;
+        margin-top: 0%;
+        right: -5%;
+        width: 230px;
+        height: 225px;
+        margin-right: 9%
+    }
+
+    .texto{
+        position: relative;
+        right: 5%;
+        bottom: 30px;
+        width: 150px;
+        margin-left: 10%;
+        font-size: 15px;  
+    }
+
+    .udt{
+        position: relative;;
+        left: 1%;
+    }
+
+    .udt h2{
+        font-size: 35px;
+    }
+
+    .udt p{
+        font-size: 20px;
+    }
+
+    #tercertitu h1{
+        font-size: 300%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        opacity: 30%;
+    }
+
+    #tercero #tercertitu{
+        top: -110px;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+    }
+
+    .serv{
+        width: 100%;
+        height: 300px ;
+        margin-left: -10%;
+    }
+
+    .serv h2{
+        position: relative;
+        z-index: 50;
+        bottom: 75%;
+        right: 45%;
+        transform: rotate(270deg);
+        color:#c8bda9;
+    }
+
+    /*----------------------------------------------------------------------------*/
+
+    .productos{
+        width: 30%;
+        position: relative;
+        top: 30px;
+        left: 10px;
+    }
+
+    .productos hr{
+        width: 175  .5%;
+        position: relative;
+        color: #c8bda9;
+        top: -74px;
+        right: -242px;
+    }
+
+     /*----------------------------------------------------------------------------*/
+
+     #sedes h2{
+        position: relative;
+        width: 25px;
+        left: 68%;
+        bottom: 50px;
+        font-size: 55px;
+    }
+
+    #sedes hr{
+        width: 65%;
+        position: relative;
+        color: #c8bda9;
+        top: 35px;
+        right: 78px;
+    }
+
+    #contenedor_cinco{
+        position: relative;
+        bottom: 140px;
+    }
+
+    #horario{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 0%;
+    }
+
+    #redes_dos .sedes_dos {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 800px) and (max-width: 1200px){
+    .boton_inicio a{
+        left: 80%;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .desplegable{
+        left: 5%;
+    }
+
+    #imagen_logo{
+        width: 50px !important;
+        height: 50px;
+        left: 15%;
+        bottom: 80%;
+    }
+   
+    #imagen_logo img{
+       width: 450px;
+       height: 300px;
+    }
+
+    .boton a{
+        left: 28%;
+        bottom: 35%;
+    }
+
+    .redes{
+        left: 91.7%;
+    }
+
+    #wpp a img{
+        left: 91.7%;
+    }
+
+    #wpp a img{
+        width: 40px;
+        height: 40px;
+        position: fixed;    
+        bottom: 14.8%; 
+    }
+
+    .red{
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+
+    .servicios{
+        width: 115px;
+        height: 50px;
+        padding: 25px 25px 25px 25px;
+        background-color: #c8bda9 ;
+        display: flex;
+        margin-left: 5%;
+        position: relative;   
+        bottom: px;
+        top: 12px;
+        left: 2.5px;
+    }
+
+    .contenedor_servicios img{
+        position: relative;
+        width: 70px;
+        height: 60px;
+        bottom: 30%;
+        left: 25%;
+    }
+
+    .servicios p{
+        position: relative;
+        bottom: -30%;
+        left: -48%;
+    }
+
+
+/*----------------------------------------------------------------------------------*/
+    .contenedor_dos{
+
+        display: flex;
+        margin-bottom: 0% !important ;
+    }
+
+    #imagen{
+        position: relative;
+        margin-top: 0%;
+        right: -5%;
+        width: 230px;
+        height: 225px;
+        margin-right: 9%
+    }
+
+    .texto{
+        position: relative;
+        right: 5%;
+        bottom: 30px;
+        width: 150px;
+        margin-left: 10%;
+        font-size: 15px;  
+    }
+
+    .udt{
+        position: relative;;
+        left: 1%;
+    }
+
+    .udt h2{
+        font-size: 35px;
+    }
+
+    .udt p{
+        font-size: 20px;
+    }
+
+    #tercertitu h1{
+        font-size: 300%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        opacity: 30%;
+    }
+
+    #tercero #tercertitu{
+        top: -110px;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+    }
+
+    .serv{
+        width: 100%;
+        height: 300px ;
+        margin-left: -7%;
+    }
+
+    .serv h2{
+        position: relative;
+        z-index: 50;
+        bottom: 88%;
+        right: 45%;
+        transform: rotate(270deg);
+        color:#c8bda9;
+    }
+
+    /*----------------------------------------------------------------------------*/
+
+    .productos{
+        width: 30%;
+        position: relative;
+        top: 30px;
+        left: 10px;
+    }
+
+    .productos hr{
+        width: 210.5%;
+        position: relative;
+        color: #c8bda9;
+        top: -74px;
+        right: -242px;
+    }
+
+     /*----------------------------------------------------------------------------*/
+
+     #sedes h2{
+        position: relative;
+        width: 25px;
+        left: 80%;
+        bottom: 50px;
+        font-size: 55px;
+    }
+
+    #sedes hr{
+        width: 65%;
+        position: relative;
+        color: #c8bda9;
+        top: 35px;
+        right: 78px;
+    }
+
+    #contenedor_cinco{
+        position: relative;
+        bottom: 140px;
+    }
+
+    #horario{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 0%;
+    }
+
+    #redes_dos .sedes_dos {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px){
+    .desplegable{
+        left: 5%;
+    }
+    .productos{
+        width: 30%;
+        position: relative;
+        top: 30px;
+        left: 10px;
+    }
+
+    .productos hr{
+        width: 255.5%;
+        position: relative;
+        color: #c8bda9;
+        top: -74px;
+        right: -242px;
+    }
+}
+
 
 
 
